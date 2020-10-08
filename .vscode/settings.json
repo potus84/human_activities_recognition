@@ -1,5 +1,4 @@
 {
     "appService.showBuildDuringDeployPrompt": false,
-    "appService.defaultWebAppToDeploy": "/subscriptions/7a514343-8280-4a64-ac5a-dbfa7e436acb/resourceGroups/IFE-MQTT/providers/Microsoft.Web/sites/ife-har-prediction",
     "appService.deploySubpath": "."
 }
