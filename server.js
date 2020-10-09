@@ -12,10 +12,11 @@ let signalArray = []
 const app = express()
 
 app.get('/', (req, res) => {
-    res.send('Yes, HAR is up')
+    res.send('Welcome to BioLab')
 })
 
 app.listen(8080, '0.0.0.0')
+console.log("App running on port 8080")
 
 mqttClient = mqtt.connect("wss://syn.ife.no/mqttproxy:9001")
 mqttClient.on('connect', function () {

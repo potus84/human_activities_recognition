@@ -1,19 +1,26 @@
 {
-  "name": "har_prediction",
+  "name": "har_predictor",
   "version": "1.0.0",
+  "description": "Deploy locally and on Azure",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "author": "Tai Le",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/potus84/human_activities_recognition.git"
+  },
+  "author": "Tyler IFE",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/potus84/human_activities_recognition/issues"
+  },
+  "homepage": "https://github.com/potus84/human_activities_recognition#readme",
   "dependencies": {
-    "@tensorflow/tfjs": "^2.5.0",
-    "@tensorflow/tfjs-node": "^2.5.0",
+    "@tensorflow/tfjs": "^2.6.0",
+    "@tensorflow/tfjs-node": "^2.6.0",
     "express": "^4.17.1",
     "mqtt": "^4.2.1"
-  },
-  "devDependencies": {},
-  "description": "For predicting human activities"
+  }
 }
