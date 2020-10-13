@@ -17,7 +17,7 @@ app.get('/', (req, res) => {
 })
 
 app.listen(port, () => {
-    console.log("App running on port 8080")
+    console.log("App running on port ", port)
 })
 
 mqttClient = mqtt.connect("wss://syn.ife.no/mqttproxy:9001")
