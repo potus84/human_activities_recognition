@@ -1,4 +1,3 @@
-// const tf = require('@tensorflow/tfjs')
 const tf = require('@tensorflow/tfjs')
 require('@tensorflow/tfjs-node')
 
@@ -6,17 +5,20 @@ const mqtt = require('mqtt')
 
 const express = require('express')
 
+const port = process.env.PORT || 8080
+
 let signalArray = []
 
 
 const app = express()
 
 app.get('/', (req, res) => {
-    res.send('Welcome to BioLab')
+    res.send('Welcome to BioLab prediction')
 })
 
-app.listen(8080, '0.0.0.0')
-console.log("App running on port 8080")
+app.listen(port, () => {
+    console.log("App running on port 8080")
+})
 
 mqttClient = mqtt.connect("wss://syn.ife.no/mqttproxy:9001")
 mqttClient.on('connect', function () {
